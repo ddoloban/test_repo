@@ -1,2 +1,4 @@
 generate code
 test
+generate code
+test
