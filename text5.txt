@@ -3,3 +3,10 @@ FROM "public"."Lead"
 WHERE "BtcIsArchival" = TRUE
   AND EXTRACT(YEAR FROM "CreatedOn") = EXTRACT(YEAR FROM CURRENT_DATE);
 text5
+
+SELECT COUNT(*) AS archival_leads_count
+FROM "public"."Lead"
+WHERE "BtcIsArchival" = TRUE
+  AND EXTRACT(YEAR FROM "CreatedOn") = EXTRACT(YEAR FROM CURRENT_DATE);
+text5
+
